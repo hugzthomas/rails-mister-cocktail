@@ -1,0 +1,11 @@
+<h1>Mister cocktails</h1>
+
+<ul>
+<% @cocktails.each do |cocktail| %>
+<li>
+<%= cocktail.name %>
+<%= link_to "voir", cocktail_path(cocktail), class: "btn btn-primary" %>
+</li>
+<% end %>
+</ul>
+
