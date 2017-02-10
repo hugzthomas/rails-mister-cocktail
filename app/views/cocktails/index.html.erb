@@ -1,11 +1,22 @@
-<h1>Mister cocktails</h1>
 
-<ul>
-<% @cocktails.each do |cocktail| %>
-<li>
-<%= cocktail.name %>
-<%= link_to "voir", cocktail_path(cocktail), class: "btn btn-primary" %>
-</li>
-<% end %>
-</ul>
+<div class="banner">
+  <div class="home"></div>
+</div>
+<div>
+  <div class="container text-center">
+    <div class="row">
+<!--       <div class="col-md-12 col-ms-12"> -->
+        <h1>Mister cocktails</h1>
+<!--       </div> -->
+    </div>
+    <ul>
+    <% @cocktails.each do |cocktail| %>
+      <li>
+        <%= cocktail.name %>
+        <%= link_to "voir", cocktail_path(cocktail), class: "btn btn-primary" %>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+</div>
 
